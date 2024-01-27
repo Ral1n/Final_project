@@ -97,7 +97,9 @@ class AppEpics extends EpicClass<AppState> {
 
   Stream<AppAction> _getReviewsStart(Stream<GetReviewsStart> actions, EpicStore<AppState> store) {
     return actions.flatMap((GetReviewsStart action) {
-      return Stream<void>.value(null).asyncMap((_) => api.getReviews(action.photoId as int)).expand((List<Review> reviews) {
+      return Stream<void>.value(null)
+          .asyncMap((_) => api.getReviews(action.photoId as int))
+          .expand((List<Review> reviews) {
         final List<String> uids = reviews
             .map((Review review) => review.uid)
             .toSet()

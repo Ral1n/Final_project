@@ -25,11 +25,11 @@ class UserPicture extends StatelessWidget {
           child: user.pictureUrl != null
               ? null
               : Text(
-            user.displayName[0].toUpperCase(),
-            style: TextStyle(
-              fontSize: radius * 0.75,
-            ),
-          ),
+                  user.displayName[0].toUpperCase(),
+                  style: TextStyle(
+                    fontSize: radius * 0.75,
+                  ),
+                ),
         );
       },
     );

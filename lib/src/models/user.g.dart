@@ -13,8 +13,7 @@ _$User$Impl _$$User$ImplFromJson(Map<String, dynamic> json) => _$User$Impl(
       twitter: json['twitter_username'] as String?,
     );
 
-Map<String, dynamic> _$$User$ImplToJson(_$User$Impl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$User$ImplToJson(_$User$Impl instance) => <String, dynamic>{
       'username': instance.userName,
       'name': instance.realName,
       'instagram_username': instance.instagram,

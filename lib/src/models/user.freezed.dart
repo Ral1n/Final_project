@@ -36,8 +36,7 @@ mixin _$User {
 
 /// @nodoc
 abstract class $UserCopyWith<$Res> {
-  factory $UserCopyWith(User value, $Res Function(User) then) =
-      _$UserCopyWithImpl<$Res, User>;
+  factory $UserCopyWith(User value, $Res Function(User) then) = _$UserCopyWithImpl<$Res, User>;
   @useResult
   $Res call(
       {@JsonKey(name: 'username') String? userName,
@@ -47,8 +46,7 @@ abstract class $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$UserCopyWithImpl<$Res, $Val extends User>
-    implements $UserCopyWith<$Res> {
+class _$UserCopyWithImpl<$Res, $Val extends User> implements $UserCopyWith<$Res> {
   _$UserCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -87,9 +85,7 @@ class _$UserCopyWithImpl<$Res, $Val extends User>
 
 /// @nodoc
 abstract class _$$User$ImplCopyWith<$Res> implements $UserCopyWith<$Res> {
-  factory _$$User$ImplCopyWith(
-          _$User$Impl value, $Res Function(_$User$Impl) then) =
-      __$$User$ImplCopyWithImpl<$Res>;
+  factory _$$User$ImplCopyWith(_$User$Impl value, $Res Function(_$User$Impl) then) = __$$User$ImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call(
@@ -100,12 +96,9 @@ abstract class _$$User$ImplCopyWith<$Res> implements $UserCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$User$ImplCopyWithImpl<$Res>
-    extends _$UserCopyWithImpl<$Res, _$User$Impl>
+class __$$User$ImplCopyWithImpl<$Res> extends _$UserCopyWithImpl<$Res, _$User$Impl>
     implements _$$User$ImplCopyWith<$Res> {
-  __$$User$ImplCopyWithImpl(
-      _$User$Impl _value, $Res Function(_$User$Impl) _then)
-      : super(_value, _then);
+  __$$User$ImplCopyWithImpl(_$User$Impl _value, $Res Function(_$User$Impl) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -145,8 +138,7 @@ class _$User$Impl implements User$ {
       @JsonKey(name: 'instagram_username') required this.instagram,
       @JsonKey(name: 'twitter_username') required this.twitter});
 
-  factory _$User$Impl.fromJson(Map<String, dynamic> json) =>
-      _$$User$ImplFromJson(json);
+  factory _$User$Impl.fromJson(Map<String, dynamic> json) => _$$User$ImplFromJson(json);
 
   @override
   @JsonKey(name: 'username')
@@ -171,25 +163,20 @@ class _$User$Impl implements User$ {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$User$Impl &&
-            (identical(other.userName, userName) ||
-                other.userName == userName) &&
-            (identical(other.realName, realName) ||
-                other.realName == realName) &&
-            (identical(other.instagram, instagram) ||
-                other.instagram == instagram) &&
+            (identical(other.userName, userName) || other.userName == userName) &&
+            (identical(other.realName, realName) || other.realName == realName) &&
+            (identical(other.instagram, instagram) || other.instagram == instagram) &&
             (identical(other.twitter, twitter) || other.twitter == twitter));
   }
 
   @JsonKey(ignore: true)
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, userName, realName, instagram, twitter);
+  int get hashCode => Object.hash(runtimeType, userName, realName, instagram, twitter);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$User$ImplCopyWith<_$User$Impl> get copyWith =>
-      __$$User$ImplCopyWithImpl<_$User$Impl>(this, _$identity);
+  _$$User$ImplCopyWith<_$User$Impl> get copyWith => __$$User$ImplCopyWithImpl<_$User$Impl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -201,11 +188,10 @@ class _$User$Impl implements User$ {
 
 abstract class User$ implements User {
   const factory User$(
-          {@JsonKey(name: 'username') required final String? userName,
-          @JsonKey(name: 'name') required final String? realName,
-          @JsonKey(name: 'instagram_username') required final String? instagram,
-          @JsonKey(name: 'twitter_username') required final String? twitter}) =
-      _$User$Impl;
+      {@JsonKey(name: 'username') required final String? userName,
+      @JsonKey(name: 'name') required final String? realName,
+      @JsonKey(name: 'instagram_username') required final String? instagram,
+      @JsonKey(name: 'twitter_username') required final String? twitter}) = _$User$Impl;
 
   factory User$.fromJson(Map<String, dynamic> json) = _$User$Impl.fromJson;
 
@@ -223,6 +209,5 @@ abstract class User$ implements User {
   String? get twitter;
   @override
   @JsonKey(ignore: true)
-  _$$User$ImplCopyWith<_$User$Impl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$User$ImplCopyWith<_$User$Impl> get copyWith => throw _privateConstructorUsedError;
 }

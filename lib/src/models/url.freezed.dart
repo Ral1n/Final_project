@@ -29,8 +29,7 @@ mixin _$Url {
 
 /// @nodoc
 abstract class $UrlCopyWith<$Res> {
-  factory $UrlCopyWith(Url value, $Res Function(Url) then) =
-      _$UrlCopyWithImpl<$Res, Url>;
+  factory $UrlCopyWith(Url value, $Res Function(Url) then) = _$UrlCopyWithImpl<$Res, Url>;
   @useResult
   $Res call({String regular});
 }
@@ -60,19 +59,15 @@ class _$UrlCopyWithImpl<$Res, $Val extends Url> implements $UrlCopyWith<$Res> {
 
 /// @nodoc
 abstract class _$$Url$ImplCopyWith<$Res> implements $UrlCopyWith<$Res> {
-  factory _$$Url$ImplCopyWith(
-          _$Url$Impl value, $Res Function(_$Url$Impl) then) =
-      __$$Url$ImplCopyWithImpl<$Res>;
+  factory _$$Url$ImplCopyWith(_$Url$Impl value, $Res Function(_$Url$Impl) then) = __$$Url$ImplCopyWithImpl<$Res>;
   @override
   @useResult
   $Res call({String regular});
 }
 
 /// @nodoc
-class __$$Url$ImplCopyWithImpl<$Res> extends _$UrlCopyWithImpl<$Res, _$Url$Impl>
-    implements _$$Url$ImplCopyWith<$Res> {
-  __$$Url$ImplCopyWithImpl(_$Url$Impl _value, $Res Function(_$Url$Impl) _then)
-      : super(_value, _then);
+class __$$Url$ImplCopyWithImpl<$Res> extends _$UrlCopyWithImpl<$Res, _$Url$Impl> implements _$$Url$ImplCopyWith<$Res> {
+  __$$Url$ImplCopyWithImpl(_$Url$Impl _value, $Res Function(_$Url$Impl) _then) : super(_value, _then);
 
   @pragma('vm:prefer-inline')
   @override
@@ -93,8 +88,7 @@ class __$$Url$ImplCopyWithImpl<$Res> extends _$UrlCopyWithImpl<$Res, _$Url$Impl>
 class _$Url$Impl implements Url$ {
   const _$Url$Impl({required this.regular});
 
-  factory _$Url$Impl.fromJson(Map<String, dynamic> json) =>
-      _$$Url$ImplFromJson(json);
+  factory _$Url$Impl.fromJson(Map<String, dynamic> json) => _$$Url$ImplFromJson(json);
 
   @override
   final String regular;
@@ -119,8 +113,7 @@ class _$Url$Impl implements Url$ {
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$Url$ImplCopyWith<_$Url$Impl> get copyWith =>
-      __$$Url$ImplCopyWithImpl<_$Url$Impl>(this, _$identity);
+  _$$Url$ImplCopyWith<_$Url$Impl> get copyWith => __$$Url$ImplCopyWithImpl<_$Url$Impl>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
@@ -139,6 +132,5 @@ abstract class Url$ implements Url {
   String get regular;
   @override
   @JsonKey(ignore: true)
-  _$$Url$ImplCopyWith<_$Url$Impl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$Url$ImplCopyWith<_$Url$Impl> get copyWith => throw _privateConstructorUsedError;
 }

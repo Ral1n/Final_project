@@ -100,7 +100,6 @@ AppState _getReviewsSuccessful(AppState state, GetReviewsSuccessful action) {
   return state.copyWith(reviews: action.reviews);
 }
 
-
 AppState _createReviewSuccessful(AppState state, CreateReviewSuccessful action) {
   return state.copyWith(reviews: <Review>[action.review, ...state.reviews]);
 }

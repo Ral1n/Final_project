@@ -64,14 +64,12 @@ mixin _$LoadPhotos {
 
 /// @nodoc
 abstract class $LoadPhotosCopyWith<$Res> {
-  factory $LoadPhotosCopyWith(
-          LoadPhotos value, $Res Function(LoadPhotos) then) =
+  factory $LoadPhotosCopyWith(LoadPhotos value, $Res Function(LoadPhotos) then) =
       _$LoadPhotosCopyWithImpl<$Res, LoadPhotos>;
 }
 
 /// @nodoc
-class _$LoadPhotosCopyWithImpl<$Res, $Val extends LoadPhotos>
-    implements $LoadPhotosCopyWith<$Res> {
+class _$LoadPhotosCopyWithImpl<$Res, $Val extends LoadPhotos> implements $LoadPhotosCopyWith<$Res> {
   _$LoadPhotosCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
@@ -82,19 +80,16 @@ class _$LoadPhotosCopyWithImpl<$Res, $Val extends LoadPhotos>
 
 /// @nodoc
 abstract class _$$LoadPhotosStartImplCopyWith<$Res> {
-  factory _$$LoadPhotosStartImplCopyWith(_$LoadPhotosStartImpl value,
-          $Res Function(_$LoadPhotosStartImpl) then) =
+  factory _$$LoadPhotosStartImplCopyWith(_$LoadPhotosStartImpl value, $Res Function(_$LoadPhotosStartImpl) then) =
       __$$LoadPhotosStartImplCopyWithImpl<$Res>;
   @useResult
   $Res call({String query, String color});
 }
 
 /// @nodoc
-class __$$LoadPhotosStartImplCopyWithImpl<$Res>
-    extends _$LoadPhotosCopyWithImpl<$Res, _$LoadPhotosStartImpl>
+class __$$LoadPhotosStartImplCopyWithImpl<$Res> extends _$LoadPhotosCopyWithImpl<$Res, _$LoadPhotosStartImpl>
     implements _$$LoadPhotosStartImplCopyWith<$Res> {
-  __$$LoadPhotosStartImplCopyWithImpl(
-      _$LoadPhotosStartImpl _value, $Res Function(_$LoadPhotosStartImpl) _then)
+  __$$LoadPhotosStartImplCopyWithImpl(_$LoadPhotosStartImpl _value, $Res Function(_$LoadPhotosStartImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -149,8 +144,7 @@ class _$LoadPhotosStartImpl implements LoadPhotosStart {
   @override
   @pragma('vm:prefer-inline')
   _$$LoadPhotosStartImplCopyWith<_$LoadPhotosStartImpl> get copyWith =>
-      __$$LoadPhotosStartImplCopyWithImpl<_$LoadPhotosStartImpl>(
-          this, _$identity);
+      __$$LoadPhotosStartImplCopyWithImpl<_$LoadPhotosStartImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -222,31 +216,28 @@ class _$LoadPhotosStartImpl implements LoadPhotosStart {
 }
 
 abstract class LoadPhotosStart implements LoadPhotos {
-  const factory LoadPhotosStart({final String query, final String color}) =
-      _$LoadPhotosStartImpl;
+  const factory LoadPhotosStart({final String query, final String color}) = _$LoadPhotosStartImpl;
 
   String get query;
   String get color;
   @JsonKey(ignore: true)
-  _$$LoadPhotosStartImplCopyWith<_$LoadPhotosStartImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$LoadPhotosStartImplCopyWith<_$LoadPhotosStartImpl> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$LoadPhotosSuccessfulImplCopyWith<$Res> {
-  factory _$$LoadPhotosSuccessfulImplCopyWith(_$LoadPhotosSuccessfulImpl value,
-          $Res Function(_$LoadPhotosSuccessfulImpl) then) =
+  factory _$$LoadPhotosSuccessfulImplCopyWith(
+          _$LoadPhotosSuccessfulImpl value, $Res Function(_$LoadPhotosSuccessfulImpl) then) =
       __$$LoadPhotosSuccessfulImplCopyWithImpl<$Res>;
   @useResult
   $Res call({List<Photo> photos});
 }
 
 /// @nodoc
-class __$$LoadPhotosSuccessfulImplCopyWithImpl<$Res>
-    extends _$LoadPhotosCopyWithImpl<$Res, _$LoadPhotosSuccessfulImpl>
+class __$$LoadPhotosSuccessfulImplCopyWithImpl<$Res> extends _$LoadPhotosCopyWithImpl<$Res, _$LoadPhotosSuccessfulImpl>
     implements _$$LoadPhotosSuccessfulImplCopyWith<$Res> {
-  __$$LoadPhotosSuccessfulImplCopyWithImpl(_$LoadPhotosSuccessfulImpl _value,
-      $Res Function(_$LoadPhotosSuccessfulImpl) _then)
+  __$$LoadPhotosSuccessfulImplCopyWithImpl(
+      _$LoadPhotosSuccessfulImpl _value, $Res Function(_$LoadPhotosSuccessfulImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -290,16 +281,13 @@ class _$LoadPhotosSuccessfulImpl implements LoadPhotosSuccessful {
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(_photos));
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(_photos));
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
-  _$$LoadPhotosSuccessfulImplCopyWith<_$LoadPhotosSuccessfulImpl>
-      get copyWith =>
-          __$$LoadPhotosSuccessfulImplCopyWithImpl<_$LoadPhotosSuccessfulImpl>(
-              this, _$identity);
+  _$$LoadPhotosSuccessfulImplCopyWith<_$LoadPhotosSuccessfulImpl> get copyWith =>
+      __$$LoadPhotosSuccessfulImplCopyWithImpl<_$LoadPhotosSuccessfulImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -371,30 +359,25 @@ class _$LoadPhotosSuccessfulImpl implements LoadPhotosSuccessful {
 }
 
 abstract class LoadPhotosSuccessful implements LoadPhotos {
-  const factory LoadPhotosSuccessful(final List<Photo> photos) =
-      _$LoadPhotosSuccessfulImpl;
+  const factory LoadPhotosSuccessful(final List<Photo> photos) = _$LoadPhotosSuccessfulImpl;
 
   List<Photo> get photos;
   @JsonKey(ignore: true)
-  _$$LoadPhotosSuccessfulImplCopyWith<_$LoadPhotosSuccessfulImpl>
-      get copyWith => throw _privateConstructorUsedError;
+  _$$LoadPhotosSuccessfulImplCopyWith<_$LoadPhotosSuccessfulImpl> get copyWith => throw _privateConstructorUsedError;
 }
 
 /// @nodoc
 abstract class _$$LoadPhotosErrorImplCopyWith<$Res> {
-  factory _$$LoadPhotosErrorImplCopyWith(_$LoadPhotosErrorImpl value,
-          $Res Function(_$LoadPhotosErrorImpl) then) =
+  factory _$$LoadPhotosErrorImplCopyWith(_$LoadPhotosErrorImpl value, $Res Function(_$LoadPhotosErrorImpl) then) =
       __$$LoadPhotosErrorImplCopyWithImpl<$Res>;
   @useResult
   $Res call({Object error, StackTrace stackTrace});
 }
 
 /// @nodoc
-class __$$LoadPhotosErrorImplCopyWithImpl<$Res>
-    extends _$LoadPhotosCopyWithImpl<$Res, _$LoadPhotosErrorImpl>
+class __$$LoadPhotosErrorImplCopyWithImpl<$Res> extends _$LoadPhotosCopyWithImpl<$Res, _$LoadPhotosErrorImpl>
     implements _$$LoadPhotosErrorImplCopyWith<$Res> {
-  __$$LoadPhotosErrorImplCopyWithImpl(
-      _$LoadPhotosErrorImpl _value, $Res Function(_$LoadPhotosErrorImpl) _then)
+  __$$LoadPhotosErrorImplCopyWithImpl(_$LoadPhotosErrorImpl _value, $Res Function(_$LoadPhotosErrorImpl) _then)
       : super(_value, _then);
 
   @pragma('vm:prefer-inline')
@@ -434,20 +417,17 @@ class _$LoadPhotosErrorImpl implements LoadPhotosError {
         (other.runtimeType == runtimeType &&
             other is _$LoadPhotosErrorImpl &&
             const DeepCollectionEquality().equals(other.error, error) &&
-            (identical(other.stackTrace, stackTrace) ||
-                other.stackTrace == stackTrace));
+            (identical(other.stackTrace, stackTrace) || other.stackTrace == stackTrace));
   }
 
   @override
-  int get hashCode => Object.hash(
-      runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
+  int get hashCode => Object.hash(runtimeType, const DeepCollectionEquality().hash(error), stackTrace);
 
   @JsonKey(ignore: true)
   @override
   @pragma('vm:prefer-inline')
   _$$LoadPhotosErrorImplCopyWith<_$LoadPhotosErrorImpl> get copyWith =>
-      __$$LoadPhotosErrorImplCopyWithImpl<_$LoadPhotosErrorImpl>(
-          this, _$identity);
+      __$$LoadPhotosErrorImplCopyWithImpl<_$LoadPhotosErrorImpl>(this, _$identity);
 
   @override
   @optionalTypeArgs
@@ -519,12 +499,10 @@ class _$LoadPhotosErrorImpl implements LoadPhotosError {
 }
 
 abstract class LoadPhotosError implements LoadPhotos, ErrorAction {
-  const factory LoadPhotosError(
-      final Object error, final StackTrace stackTrace) = _$LoadPhotosErrorImpl;
+  const factory LoadPhotosError(final Object error, final StackTrace stackTrace) = _$LoadPhotosErrorImpl;
 
   Object get error;
   StackTrace get stackTrace;
   @JsonKey(ignore: true)
-  _$$LoadPhotosErrorImplCopyWith<_$LoadPhotosErrorImpl> get copyWith =>
-      throw _privateConstructorUsedError;
+  _$$LoadPhotosErrorImplCopyWith<_$LoadPhotosErrorImpl> get copyWith => throw _privateConstructorUsedError;
 }

@@ -163,9 +163,8 @@ class _HomePageState extends State<HomePage> {
                                       const SizedBox(height: 20),
                                       Container(
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(8.0),
-                                          color: const Color.fromRGBO(225, 225, 225, 1)
-                                        ),
+                                            borderRadius: BorderRadius.circular(8.0),
+                                            color: const Color.fromRGBO(225, 225, 225, 1)),
                                         padding: const EdgeInsets.all(12.0),
                                         child: Row(
                                           children: <Widget>[

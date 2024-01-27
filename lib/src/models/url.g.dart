@@ -10,7 +10,6 @@ _$Url$Impl _$$Url$ImplFromJson(Map<String, dynamic> json) => _$Url$Impl(
       regular: json['regular'] as String,
     );
 
-Map<String, dynamic> _$$Url$ImplToJson(_$Url$Impl instance) =>
-    <String, dynamic>{
+Map<String, dynamic> _$$Url$ImplToJson(_$Url$Impl instance) => <String, dynamic>{
       'regular': instance.regular,
     };

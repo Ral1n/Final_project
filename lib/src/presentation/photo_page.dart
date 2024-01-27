@@ -88,7 +88,7 @@ class PhotoPage extends StatelessWidget {
                                         ),
                                         TextSpan(
                                           text:
-                                          '${photo.user.realName} ( Instagram: ${photo.user.instagram} or Twitter: ${photo.user.twitter} )',
+                                              '${photo.user.realName} ( Instagram: ${photo.user.instagram} or Twitter: ${photo.user.twitter} )',
                                           style: const TextStyle(
                                             fontSize: 16,
                                             color: Colors.black,
